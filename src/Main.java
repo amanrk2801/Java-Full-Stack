@@ -78,6 +78,10 @@ public class Main {
 // 11. Spring Social
 // 12. Spring Cloud
 
+// Type of IOC
+// 1. Bean Factory (outdated)
+// 2. Application Context (recommended)
+
 // How to create Spring Core App
 // 1. Create a maven project
 // 2. Add Spring Context dependency
