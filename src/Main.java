@@ -77,3 +77,10 @@ public class Main {
 // 10. Spring REST
 // 11. Spring Social
 // 12. Spring Cloud
+
+// How to create Spring Core App
+// 1. Create a maven project
+// 2. Add Spring Context dependency
+// 3. Create Required class
+// 4. Create Beans.xml
+// 5. Create main (driver) to start IOC container
