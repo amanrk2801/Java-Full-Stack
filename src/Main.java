@@ -64,23 +64,106 @@ public class Main {
 // 2. Web-Framework: Spring Framework to overcome struct framework
 // 3. ORM: To develop persistence layer(DB) eg: Hibernate
 
+/*
 // Spring modules
-// 1. Spring Core
-// 2. Spring Context
-// 3. Spring JDBC
-// 4. Spring ORM
-// 5. Spring AOP
-// 6. Spring Web MVC
-// 7. Spring Security
-// 8. Spring Batch
-// 9. Spring Data JPA
-// 10. Spring REST
-// 11. Spring Social
-// 12. Spring Cloud
+1. Spring Core
+It is the base module
+Provide fundamental concept of Spring framework
+    1. IOC container
+    2. Dependency Injection
+    3. Bean Life cycle
+    4. Bean Scope
+    5. Autowiring
+Spring core is all about Managing dependencies
+among the classes with loosely coupling
+Spring core classes:
+    1. POJO
+    2. Java Beans
+    3. Component
+
+    1. POJO(Plain old Java Object)
+    Any java class that can be complied by using JDK
+
+    2. Java Beans
+    Any java class which follow specific rules
+        1. class should implement serializable interface
+        2. class should have private variable
+        3. private variable should have public get & set
+        4. class should have zero-arg constructor
+
+    3. Component
+    Contains business logic
+    ex: Controller -> deal with req & res
+        service -> Business logic
+        DAO classes -> DB logic
+
+Dependency Injection
+It is the process of injecting one class object into another class
+is called DI
+    DI: Setter DI, Constructor DI, Field DI
+
+2. Spring Context
+Deal with configurations
+
+3. Spring JDBC
+Simplify Database connection logic
+
+4. Spring ORM
+Object Relational Mapping
+
+5. Spring AOP
+Aspect oriented programming
+    eg: Login, Auditing, exception handling
+
+6. Spring Web MVC
+Web App & Distributed App
+
+7. Spring Security
+Authentication & Authorization
+JWT
+OAuth2.0
+
+8. Spring Batch
+
+9. Spring Data JPA
+
+10. Spring REST
+
+11. Spring Social
+
+12. Spring Cloud
+Provide common tool to build distributed system
+    Discovery Service
+    Gateway
+    Load Balancer
+ */
 
 // Type of IOC
 // 1. Bean Factory (outdated)
+// -> follow Lazy loading concept that means when we request then only it will create Bean object
 // 2. Application Context (recommended)
+// -> follow Eager Loading (Beans.xml is a config file)
+
+// Questions
+// 1. Spring Bean
+// 2. IOC container
+// 3. DI types
+// 4. How to start IOC
+// 5. Bean config file
+
+// Bean Scope
+// 1. Singleton (default)
+// 2. Proto type
+// 3. request
+// 4. session
+
+// Autowiring
+// 1. Inject dependent bean into target in 2 ways
+// -> Manual wiring, Autowiring
+// Autowiring means IOC container will identify dependent bean and it will inject into target bean
+// Note : We, no need to use ref attribute in bean config file
+// Auto wiring will work based on
+// byName, byType, byConstructor, no
 
 // How to create Spring Core App
 // 1. Create a maven project
@@ -88,3 +171,41 @@ public class Main {
 // 3. Create Required class
 // 4. Create Beans.xml
 // 5. Create main (driver) to start IOC container
+
+// Spring Annotations provide a way to configure your Spring application without needing XML configuration files.
+/*
+1. @Configuration
+2. @ComponentScan
+3. @Component
+4. @Service
+5. @Repository
+6. @Scope
+7. @Autowired
+8. @Qualifier
+9. @Controller/@RestController
+10. @Primary
+11. @Bean
+12. @Entity
+13. @Table
+14. @ID
+15. @Column
+ */
+
+// Spring Boot = Spring Framework - XML config
+// Approach to develop Spring Based App with less config
+// Spring Boot is not replacement for spring core, Spring boot developed on top of Spring Core.
+
+// Spring Advantages
+/*
+1. Less config & No xml config
+2. Embedded Server
+3. Starter dependency -> JPA-starter, web-starter, spring-boot-starter
+4. Auto Config
+5. Actuator [Production ready feature]
+ */
+
+// App Creation
+/*
+1. Initializer (start.spring.io)
+2. STS
+ */
