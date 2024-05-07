@@ -209,3 +209,40 @@ Provide common tool to build distributed system
 1. Initializer (start.spring.io)
 2. STS
  */
+
+// MySQL Docker Commands:
+// docker run --name jpademo -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql
+
+// Stop MySQL Container:
+// docker stop jpademo
+
+// Remove MySQL Container:
+// docker rm jpademo
+
+// Execute Bash Shell in MySQL Container:
+// docker exec -it jpademo bash
+
+// MySQL Commands:
+// Connect to MySQL:
+// mysql -h localhost -u root -p
+
+// USE jpademo;
+
+// CREATE DATABASE IF NOT EXISTS jpademo;
+
+/*
+ CREATE TABLE IF NOT EXISTS students (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(30),
+    course VARCHAR(30),
+    address VARCHAR(50)
+);
+ */
+
+// SHOW TABLES;
+
+// DROP TABLE IF EXISTS table_name;
+
+// EXIT;
+
+
