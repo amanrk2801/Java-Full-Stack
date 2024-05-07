@@ -223,12 +223,12 @@ Provide common tool to build distributed system
 // docker exec -it jpademo bash
 
 // MySQL Commands:
-// Connect to MySQL:
+// Connect to MySQL: (eg: password -> password)
 // mysql -h localhost -u root -p
 
-// USE jpademo;
-
 // CREATE DATABASE IF NOT EXISTS jpademo;
+
+// USE jpademo;
 
 /*
  CREATE TABLE IF NOT EXISTS students (
@@ -243,6 +243,9 @@ Provide common tool to build distributed system
 
 // DROP TABLE IF EXISTS table_name;
 
-// EXIT;
+// EXIT; -> from sql
+// exit; -> from docker bash
+
+
 
 
