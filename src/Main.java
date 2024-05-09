@@ -246,6 +246,36 @@ Provide common tool to build distributed system
 // EXIT; -> from sql
 // exit; -> from docker bash
 
+// AOP
+// AOP over OOPs
+// AOP is methodology of programming to solve the problem
+// AOP is built on top of OOP style programming
+
+// OOPs
+// Clumsy code due to mixing primary logic with secondary logic
+// No reusability
+// kills the readability
+// No clean code
+// Debugging will be complex
+// Not recommended for large scale application
+
+// AOP
+// AOP may refer to Aspect-Oriented Programming, a coding method that helps developers separate common tasks from the main program logic. This helps developers write more organized and cleaner code. For example, a chef might have an aspect that handles cleaning, inventory, and safety regulations
+// The framework that are based on Aspect oriented programming principles are called AOP enabled framework
+// eg: Spring AOP
+
+// AOP principle/terminologies
+// 1. Aspect [what you want to apply] -> it is the class that represented secondary logic
+// 2. Advice [how you want to apply] -> it is the action taken by aspect. Types: Before Advice, After Advice, Around Advice, Throws Advice
+// 3. Joint points [where we can apply] -> place in target class
+// 4. Point cut [when we have applied/want to apply] -> collection of points where the aspect are advised
+// 5. Target class
+
+// Example: In a restaurant management system,
+// Aspect: CleaningAspect (deals with cleaning tasks)
+// Advice: BeforeAdvice (cleans before service)
+// Joint Point: Before serving customers
+// Pointcut: Collection of points where cleaning tasks are applied
 
 
 
